@@ -383,3 +383,42 @@ function ocultarEstado() {
 window.ocultarEstado = ocultarEstado;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("wWQSfn-ueRaH4v-MV"); // 👈 Tu clave pública
+
+  const form = document.getElementById("form-reserva");
+  const btn = form.querySelector("button");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    btn.disabled = true;
+    btn.innerText = "Enviando...";
+
+    emailjs.sendForm("service_3ma96uo", "template_of8yeri", form)
+      .then(() => {
+        alert("✅ Reserva enviada correctamente.");
+        form.reset();
+        btn.innerText = "Reservar";
+        btn.disabled = false;
+      })
+      .catch((error) => {
+        console.error("❌ Error al enviar la reserva:", error);
+        alert("Hubo un error al enviar la reserva.");
+        btn.innerText = "Reservar";
+        btn.disabled = false;
+      });
+  });
+});
