@@ -300,7 +300,11 @@
       </section>
       
   
-
+      <section id="estado-del-dia" style="display: none;">
+        <p id="mensaje-estado">🟢 Estoy trabajando hoy</p>
+      </section>
+      
+      
      <!-- Formulario de reservas (público) -->
 <section class="reservas" id="reservas">
     <h2>Reservá tu turno</h2>
@@ -335,6 +339,16 @@
   
     <!-- Lista -->
     <ul id="lista-reservas"></ul>
+
+    <div id="admin-estado">
+      <h4>Estado del día</h4>
+      <button onclick="cambiarEstado('🟢 Estoy trabajando hoy')">Estoy trabajando</button>
+      <button onclick="cambiarEstado('🔴 Hoy no voy a estar')">No voy a estar</button>
+      <input type="text" id="estado-personalizado" placeholder="Mensaje personalizado" />
+      <button onclick="cambiarEstadoPersonalizado()">Actualizar</button>
+      <button onclick="ocultarEstado()">Ocultar mensaje</button>
+    </div>
+    
   
     <!-- Cerrar sesión -->
     <button onclick="cerrarAdmin()" style="margin-top: 1rem;">Cerrar sesión admin</button>
