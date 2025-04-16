@@ -429,6 +429,42 @@
     
 
 
+
+  #estado-del-dia {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  #admin-estado button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #a974bf;
+    color: white;
+    cursor: pointer;
+  }
+  #admin-estado input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+  }
+  
+
+
+
+
+
+
+
   @media (min-width: 769px) {
     .imagenes {
       justify-content: center;
@@ -443,5 +479,8 @@
       width: 100%;
       max-height: 500px;
     }
+
+    
+
   }
   
