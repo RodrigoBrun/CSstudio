@@ -105,22 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const lista = document.getElementById('listaSeleccion');
-    const botonesCarrito = document.querySelectorAll('.btn-carrito');
   
-    botonesCarrito.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const servicio = btn.closest('.servicio');
-        const nombre = servicio.querySelector('h3').textContent;
-        const precio = servicio.querySelector('.precio').textContent;
-  
-        const item = document.createElement('li');
-        item.textContent = `${nombre} - ${precio}`;
-        lista.appendChild(item);
-      });
-    });
-  });
   
 
 
@@ -137,12 +122,39 @@ document.querySelectorAll('.btn-carrito').forEach(boton => {
   });
 });
 
+
+
+
 function actualizarInputServicios() {
   const input = document.getElementById("input-servicio");
-  if (input) {
-    input.value = serviciosSeleccionados.join(', ');
-  }
+  const lista = document.getElementById("listaSeleccion");
+
+  // Actualiza el input oculto con todos los servicios separados por coma
+  input.value = serviciosSeleccionados.join(', ');
+
+  // Limpia el HTML visual
+  lista.innerHTML = "";
+
+  // Vuelve a mostrar los servicios con botón ❌
+  serviciosSeleccionados.forEach((servicio, index) => {
+    const li = document.createElement("li");
+    li.textContent = servicio;
+
+    const btnEliminar = document.createElement("button");
+    btnEliminar.textContent = "❌";
+    btnEliminar.style.marginLeft = "0.5rem";
+    btnEliminar.onclick = () => {
+      serviciosSeleccionados.splice(index, 1);
+      actualizarInputServicios(); // vuelve a renderizar
+    };
+
+    li.appendChild(btnEliminar);
+    lista.appendChild(li);
+  });
 }
+
+
+
 
 
 
@@ -330,3 +342,44 @@ async function filtrarReservas() {
 window.filtrarReservas = filtrarReservas;
 
 document.addEventListener("DOMContentLoaded", mostrarReservas);
+
+
+
+
+
+
+
+
+
+
+
+
+function cambiarEstado(mensaje) {
+  const seccion = document.getElementById("estado-del-dia");
+  const cartel = document.getElementById("mensaje-estado");
+  if (cartel && seccion) {
+    cartel.textContent = mensaje;
+    seccion.style.display = "block";
+  }
+}
+window.cambiarEstado = cambiarEstado;
+
+
+function cambiarEstadoPersonalizado() {
+  const input = document.getElementById("estado-personalizado");
+  if (input && input.value.trim() !== "") {
+    cambiarEstado("📝 " + input.value.trim());
+    input.value = "";
+  }
+}
+window.cambiarEstadoPersonalizado = cambiarEstadoPersonalizado;
+
+function ocultarEstado() {
+  const seccion = document.getElementById("estado-del-dia");
+  if (seccion) {
+    seccion.style.display = "none";
+  }
+}
+window.ocultarEstado = ocultarEstado;
+
+
