@@ -116,6 +116,16 @@
     border-radius: 6px;
   }
   
+  input[type="date"] {
+    position: relative;
+    background: white url('imagenes/icono-calendario.svg') no-repeat right 1rem center;
+    background-size: 24px;
+    padding-right: 3rem;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+
   button {
     background-color: var(--main-color);
     color: var(--white);
