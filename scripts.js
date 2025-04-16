@@ -241,7 +241,7 @@ let modoAdmin = false;
 
 function activarAdmin() {
   const clave = document.getElementById("admin-pass").value;
-  if (clave === "tucuenta123") {
+  if (clave === "GraciasRodri") {
     modoAdmin = true;
     alert("Modo administrador activado 🔐");
     document.getElementById("admin-panel").style.display = "block";
