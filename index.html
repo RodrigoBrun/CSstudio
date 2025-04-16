@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>CS Studio</h1>
+    <p>Especialistas en cejas y mirada</p>
+    <a href="#reservas" class="cta">Reservá tu turno</a>
+  </header>
+
+  <section class="servicios" id="servicios">
+    <h2>Servicios</h2>
+    <input type="text" id="buscadorServicios" placeholder="Buscar servicio..." />
+  
+    <div class="servicios-lista">
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Diseño y perfilado de cejas con henna</h3>
+            <span class="precio">$1000</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Dura aproximadamente 15 días. La pigmentación y definición se ajustan al gusto de la clienta.</p>
+        </div>
+      </div>
+  
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Laminado y perfilado de cejas</h3>
+            <span class="precio">$1000</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Tratamiento temporal que alinea el vello de las cejas. Dura de 4 a 6 semanas. Tiempo de aplicación: 40min.</p>
+        </div>
+      </div>
+  
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Retiro extensiones de pestañas</h3>
+            <span class="precio">$400</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Se retiran profesionalmente las extensiones y se aplica keratina para nutrir las pestañas naturales.</p>
+        </div>
+      </div>
+
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Microblading de cejas</h3>
+            <span class="precio">$4500</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Reconstrucción semipermanente para cejas con alopecia o escasas. Dura de 10 a 18 meses. Incluye retoque y crema regeneradora.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Extensiones de pestañas pelo a pelo</h3>
+            <span class="precio">$1700</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Aplicación una a una de extensiones sintéticas. Efecto natural y personalizado. Retoques cada 21 o 30 días.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Lifting de pestañas</h3>
+            <span class="precio">$1500</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Curva pestañas desde la base. Incluye tinte, keratina y bótox. Da longitud, intensidad y flexibilidad.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Bótox de pestañas</h3>
+            <span class="precio">$500</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Hidratación profunda para pestañas dañadas o entre tratamientos. Potencia el crecimiento y la salud.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Diseño y perfilado de cejas</h3>
+            <span class="precio">$420</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Diseño por visagismo + depilación con cera fría y pinzas. Permite ajustar el diseño antes de depilar.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Extensiones + perfilado + bozo</h3>
+            <span class="precio">$1950</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Combo ideal para resaltar la mirada y rostro completo con extensiones, perfilado y depilación.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Lifting + henna o laminado + bozo</h3>
+            <span class="precio">$2250</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Combo completo que incluye levantamiento de pestañas, diseño de cejas con henna o laminado y bozo.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Lifting + Microblading + bozo</h3>
+            <span class="precio">$5500</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Mirada completa con pestañas curvas, cejas semipermanentes y depilación facial.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Extensiones + Microblading + bozo</h3>
+            <span class="precio">$6000</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Combo ideal para transformar pestañas y cejas con estilo permanente y extensión visible.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Lifting + perfilado + bozo</h3>
+            <span class="precio">$1890</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Look expresivo con pestañas curvas y cejas definidas. Incluye depilación facial.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Extensiones + henna o laminado + bozo</h3>
+            <span class="precio">$2590</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Paquete integral para una mirada intensa y prolija, ideal para eventos o uso diario.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Retoque Microblading</h3>
+            <span class="precio">Consultar</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Retoque a los 12-18 meses para mantener la forma y color del Microblading.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Retoque Micropigmentación de labios</h3>
+            <span class="precio">Consultar</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>A los 60 días de la técnica inicial. Se puede usar para neutralizar, revitalizar o reforzar el color labial.</p>
+        </div>
+      </div>
+      
+      <div class="servicio">
+        <div class="servicio-header">
+          <div class="servicio-titulo">
+            <h3>Micropigmentación de labios</h3>
+            <span class="precio">Consultar</span>
+          </div>
+          <div class="servicio-botones">
+            <button class="btn-info">+ Info</button>
+            <button class="btn-carrito" title="Agregar a tu selección">🛒</button>
+          </div>
+        </div>
+        <div class="descripcion oculto">
+          <p>Técnica semipermanente que define y colorea los labios de forma natural. Hasta 3 años de duración. Tres estilos: revitalización, neutralización o efecto labial.</p>
+        </div>
+      </div>
+      
+        </div>
+        <section class="seleccion">
+            <h3>Tu selección:</h3>
+            <ul id="listaSeleccion"></ul>
+          </section>
+      </section>
+      
+  
+
+     <!-- Formulario de reservas (público) -->
+<section class="reservas" id="reservas">
+    <h2>Reservá tu turno</h2>
+    <form id="form-reserva">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="text" name="servicio" placeholder="Servicios seleccionados" id="input-servicio" required>
+      <input type="date" name="fecha" id="fecha" required>
+      <select name="hora" id="select-hora" required>
+        <option value="">Seleccioná una hora</option>
+      </select>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+  
+  <!-- Login admin -->
+  <section id="admin-login">
+    <h3>Modo admin</h3>
+    <input type="password" id="admin-pass" placeholder="Clave de administrador" />
+    <button onclick="activarAdmin()">Ingresar</button>
+  </section>
+  
+  <!-- Panel admin (oculto por defecto) -->
+  <section class="admin-reservas" id="admin-panel" style="display: none;">
+    <h2>Turnos agendados</h2>
+  
+    <!-- Filtro -->
+    <div style="margin-bottom: 1rem;">
+      <input type="date" id="filtro-fecha" />
+      <button onclick="filtrarReservas()">Filtrar</button>
+    </div>
+  
+    <!-- Lista -->
+    <ul id="lista-reservas"></ul>
+  
+    <!-- Cerrar sesión -->
+    <button onclick="cerrarAdmin()" style="margin-top: 1rem;">Cerrar sesión admin</button>
+  </section>
+  
+      
+      
+
+      <section class="galeria" id="galeria">
+        <h2>Galería</h2>
+      
+        <!-- Imagen destacada -->
+        <div class="galeria-box">
+          <img src="imagenes/logo-galeria.png" alt="CS Studio Galería" class="galeria-banner" id="abrirGaleria">
+        </div>
+      
+       <!-- Galería oculta con scroll horizontal -->
+<div class="imagenes oculto" id="contenedorGaleria">
+    <figure>
+      <img src="imagenes/2b7af28f-b346-41c1-8319-7c9b6de5446e.png" alt="Trabajo 1">
+      <figcaption>Trabajo 1</figcaption>
+    </figure>
+    <figure>
+      <img src="imagenes/trabajo2.png" alt="Trabajo 2">
+      <figcaption>Trabajo 2</figcaption>
+    </figure>
+    <figure>
+      <img src="imagenes/fondo.png" alt="Trabajo 3">
+      <figcaption>Trabajo 3</figcaption>
+    </figure>
+  </div>
+  
+  
+      
+        <button id="volverGaleria" class="btn-volver oculto">Volver</button>
+      </section>
+      
+      
+      <section class="contacto" id="contacto">
+        <div class="contacto-box">
+          <h2>Contacto</h2>
+          <p>Para más información o consultas:</p>
+          <a href="https://wa.me/59812345678" class="contact-link" target="_blank">📱 Escribinos por WhatsApp</a>
+          <a href="https://instagram.com/CSStudio" class="contact-link" target="_blank">📷 Seguinos en Instagram</a>
+        </div>
+      </section>
+      
+      <footer>
+        <p>© 2025 CS Studio — Desarrollado por Rodrigo Brun</p>
+        <p>
+          <a href="mailto:rodrigobrun.code@gmail.com" style="color: white; text-decoration: none;">
+            📧 rodrigobrun.code@gmail.com
+          </a>
+        </p>
+      </footer>
+      
+      
+  
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
